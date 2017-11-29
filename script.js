@@ -1,6 +1,5 @@
 const headerDiv = document.getElementById('header-div');
 const headerDivOverlay = document.querySelector('.overlay');
-const fixedBottom = document.querySelector('.fixed-bottom');
 const sidebar = document.querySelector('.sidebar');
 const toggle = document.querySelector('.toggle');
 const sidebarLi = document.querySelectorAll('.sidebar li');
@@ -98,7 +97,6 @@ function scrollWhere (e) {
 
 
 if(windowScroll < heightHalfLeft+2){
-  fixedBottom.style.display = "none";
   curentPage.innerHTML="Home";
 
   headerDivOverlay.style.display='block';
@@ -109,7 +107,6 @@ if (windowScroll > heightHalfLeft  & windowScroll < aboutHeight)
   curentPage.innerHTML="About";
   headerDivOverlay.style.display='none';
   me.classList = 'me-fixed';
-  fixedBottom.style.display = "block";
 
  } 
 
@@ -126,7 +123,7 @@ me.classList.remove("me-fixed");
 const mq = window.matchMedia( "(max-width: 1200px)" );
 if (mq.matches) {
     me.style.display = 'none';
-    fixedBottom.display = 'none';
+   
 }
   else {
   // window width is less than 500px
