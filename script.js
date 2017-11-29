@@ -127,6 +127,7 @@ const mq = window.matchMedia( "(max-width: 1200px)" );
 if (mq.matches) {
     me.style.display = 'none';
     fixedBottom.display = 'none';
+}
   else {
   // window width is less than 500px
 }
