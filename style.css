@@ -28,7 +28,7 @@ body hr {
 }
 
 p{
-         font-size: 21px;
+         font-size: 28px;
     font-weight: 800;
     padding: 20px;
     line-height: 23px;
@@ -263,7 +263,10 @@ background: url("dv.png") no-repeat center center;
 /*about-end*/
 
 /*portfolio*/
-
+.portfolio-titles h2{
+  z-index:8;
+position: relative;  
+}
 .portfolio{
   position: relative;
   width: 100%;
