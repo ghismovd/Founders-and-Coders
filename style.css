@@ -855,7 +855,7 @@ textarea, input{
     right: 0;
     z-index: 3;
     list-style-type: none;
-    top:42%;
+    top:25%;
 }
 .contact-title{
   width: 100%;
@@ -864,7 +864,8 @@ textarea, input{
 .contact-content{
     width: 100%;
     text-align: center;
-    margin-top: 45px; 
+    margin-top: 18%; 
+  color:white;
 
 }
 .about {
@@ -887,9 +888,9 @@ textarea, input{
 @media only screen and (max-width: 900px) {
   
     .projects-slides ul li {
-    width: 154px;
-    height: 127px;
-    margin: 3px;
+     width: 272px;
+    height: 221px;
+      margin: 3px;
 }
 
 
