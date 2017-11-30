@@ -1,5 +1,6 @@
 const headerDiv = document.getElementById('header-div');
 const headerDivOverlay = document.querySelector('.overlay');
+const fixedBottom = document.querySelector('.fixed-bottom');
 const sidebar = document.querySelector('.sidebar');
 const toggle = document.querySelector('.toggle');
 const sidebarLi = document.querySelectorAll('.sidebar li');
@@ -110,13 +111,6 @@ function scrollWhere (e) {
 	    var heightHalfLeft = halfLeft.offsetHeight;
 
 if(windowScroll < heightHalfLeft+2){
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
-  curentPage.innerHTML="Home";
->>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
 
   headerDivOverlay.style.display='block';
 }
@@ -125,13 +119,6 @@ if (windowScroll > heightHalfLeft  & windowScroll < aboutHeight)
 
   headerDivOverlay.style.display='none';
   me.classList = 'me-fixed';
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
-
->>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
  } 
 
 else {
@@ -160,19 +147,8 @@ function showContet() {
 const mq = window.matchMedia( "(max-width: 1200px)" );
 if (mq.matches) {
     me.style.display = 'none';
-<<<<<<< HEAD
-<<<<<<< HEAD
 document.querySelector('.working-bottom').style.display = "none";
-me.classList.remove("me-fixed");
-
-=======
-=======
->>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
-   
-}
-  else {
-  // window width is less than 500px
->>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
+document.querySelector('.me-fixed').style.position ='relative';
 }
 
 // $(function() {
