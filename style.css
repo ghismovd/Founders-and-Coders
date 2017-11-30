@@ -371,7 +371,7 @@ background: url("dv.png") no-repeat center center;
 
 
 .projects-slides ul li:nth-child(5) {
-    background: url("Hp.jpg") center;
+    background: url("Sp.jpg") center;
     background-size: cover;
 }
 
@@ -878,7 +878,9 @@ textarea, input{
     min-height: 105%;
 }
 
-
+  .overlay{
+    display:none;
+  }
 
 }
 /*    box-shadow: 3px 0 10px 1px rgba(0,0,0,.2);*/
