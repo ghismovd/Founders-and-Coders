@@ -7,9 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
   </head>
 
-  <body>
+  <body onload="waitToLoad()" >
+    <div class="over"><div class="loader"></div></div>
     <h4 class="toggle"> ≣</h4>
-    <div class="curent-page">Home</div>
     <div class="sidebar">
       <ul>
         <li>Home</li>
@@ -23,14 +23,15 @@
     
   <div class="header">
     
-    <div id="header-div">
-      <div class="overlay"></div>
-      <h2>Welcome 
-    </h2>    
+      <h2>Welcome  </h2>    
     
     <h2 class="second">
       Take a look around
     </h2>
+
+    <div id="header-div">
+      <div class="overlay"></div>
+    
     </div>
 
   </div>
@@ -46,6 +47,8 @@
     </div>
     <div class="half-left div-half">
       <div class="image-holder"></div>
+    <div class="text">
+      
     <h2>
     I am a Naval and Electrical Engineer, working in a warehouse, curently seeking a career in Web Development.
     </h2> 
@@ -61,6 +64,7 @@
 
       </p>
     </div>
+    </div>
     
   </div>
 
@@ -74,12 +78,12 @@
     </div>
   </div> -->
       <div class="portfolio-titles">
-        <ul>
-          <li>github</li>
+        <ul class="socials">
+          <li><a target="_blank" href="https://www.freecodecamp.org/ghismovd"></a></li>
 
-          <li>frecodecamp</li>
+          <li><a target="_blank" href="https://github.com/ghismovd"></a></li>
 
-          <li>Codewars</li>
+          <li><a target="_blank" href="https://www.codewars.com/users/ghismovd"></a></li>
 
         </ul>
         <div class="working-bottom"></div>
@@ -96,36 +100,59 @@
       </div>
       <div class="portfolio-projects">
         <div class="wrap-project show-project">
+          <a href="https://ghismovd.github.io/freecodecamp-Random-quate-generator/">
+            
            <h2>
             Random quoate generator
              
            </h2>
             <div class="project1 "></div>  
+          </a>
        </div> 
         <div class="wrap-project">
+          <a href="https://ghismovd.github.io/freecodecamp.com-TributePage.github.io/">
+            
           <h2>
              Tribute page
 
            </h2>
        <div class="project2"></div>  
+          </a>
        </div> 
         <div class="wrap-project">
+
+       <a href="https://ghismovd.github.io/Single-Page.1/">  
        <div class="project3"></div>  
           <h2>
             Wordpress theme - Single Page
            </h2>
+       </a>
        </div> 
         <div class="wrap-project">
+          <a href="https://ghismovd.github.io">
+            
        <div class="project4"></div>  
        <h2>
        PSD to HTML
          
        </h2> 
+          </a>
+       </div>
+       <div class="wrap-project">
+       <a href="https://ghismovd.github.io/Travel-Blog.github.io/">
+         
+       <div class="project5"></div>  
+       <h2>
+        Wordpress theme - Homepage
+       </h2> 
+       </a>
        </div> 
              </div>
   </div>
   <div class="contact">
-    <div class="contact-title"></div>
+    <div class="contact-title">
+      <h2>Contact</h2>
+    </div>
     <div class="contact-content">
       <p><strong>
 If you want to collaborate on crafting amazing experience for people – you are very welcome to contact me.</strong></p>
@@ -139,16 +166,11 @@ If you want to collaborate on crafting amazing experience for people – you are
           <div class="send-btn"></div>
         </div>    
       <div class="btn">Show Form</div>
-      <div class="icons">
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
+      
     </div>
     
   </div>
+    
   <div class="footer">
     <div class="sidebar-footer">
       <ul>
@@ -157,11 +179,12 @@ If you want to collaborate on crafting amazing experience for people – you are
         <li>Portfolio</li>
         <li>Contact</li>
       </ul>
-    </div>    
+    </div> 
+    <h5>© 2017, Vlasie Dragos. All rights reserved</h5>   
   </div>
-
     </div>
     
-  </div>    <script  src="script.js"></script>
+  </div>
+      <script  src="script.js"></script>
   </body>
   </html>

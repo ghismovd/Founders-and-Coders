@@ -4,6 +4,7 @@ html, body{
 
 }
 
+
 ::-webkit-scrollbar { 
     display: none; 
 }
@@ -35,12 +36,13 @@ p{
 }
 
 h2{
-      font-family: Proxima Nova Bold,serif;
-    font-size: 23px;
+      font-family: Gibson ,serif;
+    font-size: 7vmin;
+    z-index: 1;
     padding: 20px;
 }
 
-#header-div h2 {
+.header h2 {
   margin: 0;
   padding: 0;
   position: absolute;
@@ -87,6 +89,7 @@ h2{
     z-index: 99967;
     width: 50px;
     height: 50px;
+    margin: 24px;
     cursor: pointer;
     text-decoration: none;
     font-size: 60px
@@ -97,7 +100,7 @@ body, .sidebar, .page-wraper ,.show-sidebar, .toggle{
   transition: left 0.7s ease;
 }
 
-#header-div h2.second{
+ h2.second{
   top:57%;
 }
 
@@ -134,7 +137,6 @@ body, .sidebar, .page-wraper ,.show-sidebar, .toggle{
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background: rgba(16,19,26,0.69);
 }
 .overlay{
   background: url("service-slide-gradient.png");
@@ -189,6 +191,15 @@ background-position: 1px 2px;
     background-size: 200%;
     background-repeat: no-repeat;
 }
+.half-right h1{
+        position: absolute;
+    top: 30%;
+font-family: Gibson;
+    font-size: 7vmin;
+    right: 31%;
+    margin-left: 3%;
+}
+
 .me{
 
   }
@@ -232,16 +243,6 @@ background: url("dv.png") no-repeat center center;
     background-repeat:no-repeat;
     }
 
-.portfolio a, .header a{
-      background: aqua;
-    width: 100px;
-    z-index: 20000000000000000000000;
-    height: 50px;
-    position: absolute;
-    bottom: 5%;
-    left: 47%;
-
-}
 
 
 .working-bottom{
@@ -271,27 +272,63 @@ background: url("dv.png") no-repeat center center;
 
 .portfolio-titles{
   width: 50%;
+  background: #ececec;
     text-align: center;
 }
 
 .portfolio-titles ul{
-    list-style-type: none;
-      
+  position: absolute;
+  list-style-type: none;
+  bottom: 4%;    
+  right: 69%;
 }
+
+
+
+.socials li{
+    width: 64px;
+    border-radius: 50%;
+    height: 64px;
+    display: inline-block;
+  }
+
+.socials li a{
+  position: absolute;
+  z-index: 10000;
+  display: block;
+  width: 100%;
+  height:100%;
+  }
+  
+
+.socials li:nth-child(1) {
+    background: url("fre.png") center;
+    background-size: cover;
+}
+.socials li:nth-child(2) {
+    background: url("git.png") center;
+    background-size: cover;
+}
+.socials li:nth-child(3) {
+    background: url("c.jpg") center;
+    background-size: cover;
+}
+
 
 .projects-slides ul{
     position: absolute;
-    right: 45%;
+    right: 51%;
     z-index: 3;
     list-style-type: none;
-    top: 0;
+    top: 25%;
+
 }
 
 .projects-slides ul li{
-  background: #F012BE;
   position: relative;
   top: 0px;
   left: 0px;
+  display: inline-block;
 }
 .projects-slides ul li:hover {
   box-shadow: 2px 2px 0px white, 4px 4px 0px #5b5f6a;
@@ -300,49 +337,37 @@ background: url("dv.png") no-repeat center center;
 }
 
 .projects-slides ul li {
+    width: 272px;
+    height: 221px;
+    margin: 7px;
   box-shadow: 3px 0 10px 1px rgba(0,0,0,.2);
   margin-bottom: 20px;
 }
 
 .projects-slides ul li:nth-child(1) {
     background: url("s.jpg") center;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
     background-size: cover;
 }
 
 .projects-slides ul li:nth-child(2) {
     background: url("T.gif") center;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
     background-size: cover;
 }
 
 .projects-slides ul li:nth-child(3) {
     background: url("Sp.jpg") center;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
     background-size: cover;
 }
 
 .projects-slides ul li:nth-child(4) {
     background: url("Pp.jpg") center;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
     background-size: cover;
 }
 
 
-.projects-slides ul li:nth-child(4) {
-    background: url("Pp.jpg") center;
+.projects-slides ul li:nth-child(5) {
+    background: url("hp.jpg") center;
     background-size: cover;
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
 }
 
 .portfolio-projects{
@@ -352,8 +377,10 @@ background: url("dv.png") no-repeat center center;
   position: absolute;
   top: 0;
   right: 0;
-  background: url("http://www.powerpointhintergrund.com/download/hd-desk-background-wallpaper-image-2377");
+<<<<<<< HEAD
+=======
   background-size: cover;
+>>>>>>> 07585d9a17bea8e0c9f18edc4bab8914f874f6b7
 }
 
 .wrap-project{
@@ -367,9 +394,11 @@ background: url("dv.png") no-repeat center center;
 }
 
 .wrap-project h2{
-  position: absolute;
-  right: 39%;
-  bottom: 48%;
+ position: absolute;
+    background: rgba(30,17,45,0.4);
+    bottom: 0;
+    color: white;
+    left: 4%;
 
 }
 
@@ -397,6 +426,9 @@ background: url("dv.png") no-repeat center center;
 }
 
 .project4:hover{
+  transform:  scale(2.2);
+}
+.project5:hover{
   transform:  scale(2.2);
 }
 
@@ -433,9 +465,8 @@ background: url("dv.png") no-repeat center center;
 
 }
 .project5{
-
   transition: 35s transform linear;
-  background: url("T.jpg") center;
+  background: url("hp.jpg") center;
   background-size: cover;
   height: 100vh;
 
@@ -457,6 +488,7 @@ background: url("dv.png") no-repeat center center;
 
 /*animation-sidebar*/
 
+
 li, .sidebar{
   transition: all 0.2s ease-out;
 }
@@ -476,6 +508,9 @@ li, .sidebar-footer{
 
 
 /*Contact*/
+.contact h2{
+  font-size: 5vmin;
+}
 .contact{
   position: relative;
     width: 100%;
@@ -483,6 +518,7 @@ li, .sidebar-footer{
     display: flex;
 }
 .contact-title{
+  text-align: center;
   width: 50%;
   background: url(contact.jpeg);
   background-size: cover;
@@ -527,10 +563,11 @@ li, .sidebar-footer{
 .btn{
 
     background: #4285f4;
-    width: 11vmin;
+    width: 15vmin;
+    text-align: center;
     color: #fff;
     text-transform: uppercase;
-    padding: 20px 30px;
+    padding: 15px 14px;
     border-radius: 5px;
     margin: auto;
     box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4);
@@ -540,8 +577,8 @@ li, .sidebar-footer{
 }
 .btn:hover {
   box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
-  -webkit-transform: translate(0px, -10px) scale(1.2);
-          transform: translate(0px, -10px) scale(1.2);
+  -webkit-transform: translate(0px, -10px) scale(1.1);
+          transform: translate(0px, -10px) scale(1.1);
 }
 }
 
@@ -622,14 +659,17 @@ textarea, input{
 }
 
 /*start footer*/
+.foot{
+  height: 200px;
+}
 .sidebar-footer{
   width: 100%;
   position: relative;
-  height: 200px;  
+  height: 120px;  
 }
 .sidebar-footer ul {
     list-style: none;
-    padding: 40px;
+    padding: 25px;
     margin: 0;
   }
 
@@ -646,7 +686,52 @@ textarea, input{
     display: inline-block;
 }
 
+.footer h5{
+      font-size: 14px;
+    position: absolute;
+    bottom: 0px;
+    right: 1%;
+}
 
+.over{
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: black;
+}
+
+
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid blue;
+  border-bottom: 16px solid blue;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+  position: absolute;
+    top: 40%;
+    right: 44%;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.footer{
+      position: relative;
+    background: #2c1e32e6;
+  }
 
 @media only screen and (max-width: 1200px) {
    .portfolio {
@@ -673,23 +758,13 @@ textarea, input{
     display: block;
     /* top: 0; */
     /* right: 0; */
-    background: url(http://www.powerpointhintergrund.com/download/hd-desk-background-wallpaper-image-2377);
-    background-size: cover;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.text{
+    width: 199%;
+    position: absolute;
+    right: 0%;
+  
+}
 
 
 }
